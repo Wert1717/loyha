@@ -1,0 +1,16 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch"
+  },
+  "keywords": ["tailwindcss","css","html"],
+  "author": "Kamoliddin",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
+}
