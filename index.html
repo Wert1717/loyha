@@ -1,46 +1,145 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-black text-white">
+<body>
+  <header class="container flex justify-between mx-auto items-center ">
+    <h2>Logo</h2>
 
-  <section class="container grid grid-cols-1 w-full max-w-[800px] mx-auto gap-5 px-4">
-    <div>
-      <h1 class="font-sans text-5xl font-bold">Как перестать беспокоиться и начать жить?</h1>
-      <p>Рассказываю, как прекратить бегать, словно белка в колесе, научиться по-настоящему любить жизнь и, наконец,
-        расслабиться.</p>
+    <ul class="md:flex hidden space-x-2 lg:space-x-4  gap-5 lg:gap-12">
+      <li>
+        <a class="text-lg fond-seibold" href="#">Works</a>
+      </li>
+      <li>
+        <a class="text-lg fond-seibold" href="#">Blog</a>
+      </li>
+      <li>
+        <a class="text-lg fond-seibold" href="#">Contact</a>
+      </li>
+    </ul>
+    <div class="md:hidden block text-xl">
+      <i class="fa-solid fa-bars"></i>
     </div>
-
-    <div class="my-5">
-      <img src="https://img4.teletype.in/files/35/5d/355d514f-650b-4159-9cbf-0c493afbb25d.jpeg" alt="">
+  </header>
+  <section id="hero"
+    class="hero my-12 container flex flex-col-reverse sm:items-start items-center sm:flex-row justify-between mt-12">
+    <div class="sm:max-w-1/2 sm:text-left text-center">
+      <h1 class="text-4xl font-bold text-[#21243D]">Hi, I am John,
+        Creative Technologist</h1>
+      <p class="text-lg mt-4 my-5 text[16px] text-[#21243D]">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+        do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+      </p>
+      <button class="mt-6 text-[20px] bg-[#FF6464] text-white py-2 px-4 rounded">Dowload Resume</button>
     </div>
-
-    <div>
-      <p>В популярной книге американского психолога и педагога Дейла Карнеги «Как перестать беспокоиться и начать жить»
-        подробно и популярно на более чем двухстах страницах рассказывается, как, почему и зачем нужно научиться любить
-        свою жизнь и получать от нее максимум удовольствия, не жертвуя при этом своими амбициями и желаниями. Сегодня
-        посыл Карнеги, как никогда, кажется утопией. Как в нашем скоростном мире можно расслабиться и отдохнуть, когда
-        порой нет времени даже на обед?</p>
-
-      <p>Я решил выяснить, в чем же секрет успешной и благополучной жизни и проштудировал пару популярных книг известных
-        психологов. И так представляю самые важные, действенные и, как мне кажется, честные советы.</p>
+    <div class="">
+      <img class="md:h-[245px] h-[200px] w-[200px] md:w-[245px] rounded-full" src="./images/Ellipse 1 (1).svg"
+        alt="Hero image">
     </div>
+  </section>
 
-    <div>
-      <img src="https://img3.teletype.in/files/a4/93/a49375c6-25a4-4c2f-b82d-5190e27ef1a8.jpeg" alt="">
-    </div>
 
-    <!-- Responsive Grid Section -->
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
-      
-    </div>
+  <section class="bg-slate-300 py-6">
+    <main class=" container ">
+      <div class="flex justify-center sm:justify-between items-center">
+        <h2 class="font-semibold text-2xl">Recent posts</h2>
+        <h2 class="text-blue-500 hidden sm:block">View all</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2  gap-5 my-8">
+        <figure class=" bg-white p-4 rounded-xl">
+          <h1 class="font-bold text-2xl">Making a design system from scratch</h1>
+
+          <p class="flex my-6 gap-10">
+            <span>12 Feb 2020</span> | <span>Design, Pattern</span>
+          </p>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
+        </figure>
+        <figure class=" bg-white p-4 rounded-xl">
+          <h1 class="font-bold text-2xl">Creating pixel perfect icons in Figma</h1>
+
+          <p class="flex my-6 gap-10">
+            <span>12 Feb 2020</span> | <span>Figma, Icon Design</span>
+          </p>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+
+        </figure>
+      </div>
+    </main>
 
   </section>
 
+  <section class="container my-8">
+    <h1>Featured works</h1>
+
+    <div class="my-6 flex flex-col sm:flex-row gap-6 ">
+      <div class="h-[180px] w-full sm:w-[246px]">
+        <img class="w-full h-full" src="./images/Rectangle 30.png" alt="">
+      </div>
+      <div class=" w-full sm:w-8/12">
+        <h1 class="font-bold text-xl">Designing Dashboards</h1>
+        <p class="flex gap-8 my-2 sm:my-4">
+          <span class="bg-black font-bold text-white rounded-full px-2">2020</span> <span class="text-gray-500">Dashboard</span>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </p>
+      </div>
+    </div>
+
+    <div class="divider w-full h-[1px] bg-gray-200"></div>
+
+    <div class="my-6 flex flex-col sm:flex-row gap-6 ">
+      <div class="h-[180px] w-full sm:w-[246px]">
+        <img class="w-full h-full" src="./images/Rectangle 32.png" alt="">
+      </div>
+      <div class=" sm:w-8/12">
+        <h1 class="font-bold text-xl">36 Days of Malayalam type</h1>
+        <p class="flex gap-8 my-2 sm:my-4">
+          <span class="bg-black font-bold text-white rounded-full px-2">2018</span> <span class="text-gray-500">Dashboard</span>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </p>
+      </div>
+    </div>
+
+    <div class="divider w-full h-[1px] bg-gray-200"></div>
+
+    <div class="my-6 flex flex-col sm:flex-row gap-6 ">
+      <div class="h-[180px] w-full sm:w-[246px]">
+        <img class="w-full h-full" src="./images/Rectangle 34.png" alt="">
+      </div>
+      <div class=" sm:w-8/12">
+        <h1 class="font-bold text-xl">36 Days of Malayalam type</h1>
+        <p class="flex gap-8 my-2 sm:my-4">
+          <span class="bg-black font-bold text-white rounded-full px-2">2018</span> <span class="text-gray-500">Dashboard</span>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </p>
+      </div>
+    </div>
+
+    <div class="divider w-full h-[1px] bg-gray-200"></div>
+
+  </section>
+  <footer>
+    <div class="w-1/2 mx-auto py-8 text-center flex flex-col justify-center mb-4">
+      <div class="flex justify-center gap-4 mb-3">
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands text-3xl font-semibold fa-square-facebook"></i></a>
+        <a href="https://www.instagram.com/isayev_k777" target="_blank"><i class="fa-brands text-3xl font-semibold fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands text-3xl font-semibold fa-twitter"></i></a>
+        <a href="https://www.twitter.com "target="_blank"><i class="fa-brands text-3xl font-semibold fa-invision"></i></a>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+  </footer>
 </body>
+
 </html>
